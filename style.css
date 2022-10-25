@@ -1,0 +1,175 @@
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: #caa3ed;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+/*main*/
+
+nav {
+  display: left;
+  background-color: #a266d8;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.wrapper {
+  align-items: center;
+  width: 100%;
+  display: center;
+  margin: auto;
+  flex-flow: row wrap;
+  gap: 2rem 2rem;
+  justify-content: center;
+}
+
+.wrapper2 {
+  align-items: center;
+  width: 100%;
+  display: flex;
+  margin-top: 3rem;
+}
+
+.HERO {
+  max-width: 100%;
+  max-height: var(--image-max-width);
+  margin-top: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+}
+
+.HERO2 {
+  max-width: 50%;
+  max-height: var(--image-max-width);
+  margin-top: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ li a:hover:not(.active) {
+      background-color: #04aa6d;
+    }
+
+    .active {
+      background-color: #04aa6d;
+      align-items: stretch;
+    }
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  color: white;
+}
+
+.nav-links li {
+  font-size: 1rem;
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+  }
+
+  .nav-links li {
+    font-size: 1rem;
+    display: inline;
+  }
+
+  .wrapper {
+    align-items: center;
+    width: 100%;
+    display: flex;
+  }
+
+  .wrapper2 {
+    align-items: center;
+    width: 100%;
+    display: center;
+    margin-top: 3rem;
+  }
+
+  
+  .gridimageabout {
+  max-width: 100%;
+  max-height: var(--image-max-width);
+  margin-top: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+}
+
+  .gridimage_1,
+  .gridimage_2,
+  .gridimage_3 {
+    width: 28vw;
+    height: 28vw;
+    object-fit: cover;
+  }
+
+  .main-body {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .main-body img {
+    width: 45%;
+    height: auto;
+  }
+
+  .main-body p {
+    width: 45%;
+  }
+}
+
+/* Subheading */
+h2 {
+  color: #000000;
+  text-align: center;
+}
